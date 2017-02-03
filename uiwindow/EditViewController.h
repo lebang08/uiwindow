@@ -11,5 +11,6 @@
 @interface EditViewController : UIViewController
 - (IBAction)logSomeThing:(UIButton *)sender;
 - (IBAction)DeleteViewControl:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *logSomeThingBtn;
 
 @end

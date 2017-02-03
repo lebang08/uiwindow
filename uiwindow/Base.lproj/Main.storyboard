@@ -76,6 +76,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="DeleteViewControl:" destination="55K-1b-8az" eventType="touchUpInside" id="iiN-Kk-7Pe"/>
                                     <action selector="logSomeThing:" destination="55K-1b-8az" eventType="touchUpInside" id="3Nl-F0-857"/>
                                 </connections>
                             </button>
@@ -90,6 +91,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="logSomeThingBtn" destination="nhI-6R-dHb" id="WlU-B7-NFi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfY-iL-Oex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

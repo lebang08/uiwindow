@@ -37,6 +37,7 @@
 
 - (IBAction)logSomeThing:(UIButton *)sender {
     NSLog(@"editview----------------------%s","what");
+//    _logSomeThingBtn.backgroundColor = [UIColor redColor];
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"这是一个简单的警告框" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
     [alert show];
 }

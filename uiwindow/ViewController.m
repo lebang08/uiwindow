@@ -64,10 +64,12 @@
     [imgview addGestureRecognizer:singletap];
     [self.view addSubview:imgview];
     
-//    UIButton *btn = [[UIButton alloc] init];
-//    btn.frame = CGRectMake(10, 30, 30, 30);
-//    btn.backgroundColor = [UIColor redColor];
-//    [self.view addSubview:btn];
+    UIButton *btn = [[UIButton alloc] init];
+    btn.frame = CGRectMake(10, 30, 30, 30);
+    btn.backgroundColor = [UIColor redColor];
+//    [btn addTarget:self action:@selector(yourBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(mybtnclick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
     
 //    UILabel *label = [[UILabel alloc]init];
@@ -92,7 +94,15 @@
     stepper.center = CGPointMake(160, 280);
     [stepper addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:stepper];
-    
+}
+
+
+-(IBAction)mybtnclick:(id)sender{
+    NSLog(@"my btn click");
+}
+
+-(IBAction)valueChange:(id)sender{
+    NSLog(@"I am change value");
 }
 
 - (void)didReceiveMemoryWarning {
