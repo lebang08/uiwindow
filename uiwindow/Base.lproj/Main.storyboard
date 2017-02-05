@@ -74,6 +74,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhI-6R-dHb">
                                 <rect key="frame" x="123" y="161" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="DeleteViewControl:" destination="55K-1b-8az" eventType="touchUpInside" id="iiN-Kk-7Pe"/>
@@ -88,6 +89,14 @@
                                     <action selector="DeleteViewControl:" destination="55K-1b-8az" eventType="touchUpInside" id="ULO-fc-4M5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXi-YN-s41">
+                                <rect key="frame" x="132" y="268" width="128" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="b1D-yG-edT" kind="modal" id="d4c-un-7AY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -97,7 +106,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfY-iL-Oex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="36"/>
+            <point key="canvasLocation" x="752.79999999999995" y="35.532233883058474"/>
+        </scene>
+        <!--Button View Controller-->
+        <scene sceneID="pGr-1J-aPU">
+            <objects>
+                <viewController id="b1D-yG-edT" customClass="ButtonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Swy-BK-JkQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="HNN-QS-v6j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gaq-Aa-0gz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC3-fl-sOQ">
+                                <rect key="frame" x="128" y="72" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.54468035614886667" green="0.82373948032074851" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="DoFirst:" destination="b1D-yG-edT" eventType="touchUpInside" id="4lp-xy-oPQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="MyFirstButton" destination="rC3-fl-sOQ" id="emk-HM-6YY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ky-3m-GjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432.8" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

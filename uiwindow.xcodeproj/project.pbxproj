@@ -15,6 +15,7 @@
 		18BA361D1E2F9D3200B4F171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BA361B1E2F9D3200B4F171 /* LaunchScreen.storyboard */; };
 		18BA36281E2F9D3200B4F171 /* uiwindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36271E2F9D3200B4F171 /* uiwindowTests.m */; };
 		18BA36331E2F9D3200B4F171 /* uiwindowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36321E2F9D3200B4F171 /* uiwindowUITests.m */; };
+		18D0D8431E47684400CF0052 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0D8421E47684400CF0052 /* ButtonViewController.m */; };
 		18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E9C61E4037F300CE1503 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		18BA362E1E2F9D3200B4F171 /* uiwindowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uiwindowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BA36321E2F9D3200B4F171 /* uiwindowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uiwindowUITests.m; sourceTree = "<group>"; };
 		18BA36341E2F9D3200B4F171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D0D8411E47684400CF0052 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		18D0D8421E47684400CF0052 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		18E6E9C51E4037F300CE1503 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		18E6E9C61E4037F300CE1503 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +118,8 @@
 				18BA360D1E2F9D3200B4F171 /* Supporting Files */,
 				18E6E9C51E4037F300CE1503 /* EditViewController.h */,
 				18E6E9C61E4037F300CE1503 /* EditViewController.m */,
+				18D0D8411E47684400CF0052 /* ButtonViewController.h */,
+				18D0D8421E47684400CF0052 /* ButtonViewController.m */,
 			);
 			path = uiwindow;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */,
 				18BA36151E2F9D3200B4F171 /* ViewController.m in Sources */,
 				18BA36121E2F9D3200B4F171 /* AppDelegate.m in Sources */,
+				18D0D8431E47684400CF0052 /* ButtonViewController.m in Sources */,
 				18BA360F1E2F9D3200B4F171 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
