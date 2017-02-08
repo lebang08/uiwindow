@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
 - (IBAction)mysSider:(id)sender forEvent:(UIEvent *)event;
-//@property (strong, nonatomic) IBOutlet UIView *stepper;
-- (IBAction)CodeOpen:(UIButton *)sender;
+- (IBAction)CodeOpen:(id)sender;
 
 @property (strong,nonatomic) UISlider *slider;
 @property (strong,nonatomic) UIStepper *stepper;
+@property (weak, nonatomic) IBOutlet UISlider *myIBslider;
 
 
 @end
-

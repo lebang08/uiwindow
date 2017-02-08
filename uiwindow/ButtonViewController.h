@@ -10,7 +10,6 @@
 
 @interface ButtonViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *MyFirstButton;
-@property (strong, nonatomic) IBOutlet UIButton *MySecondButton;
 - (IBAction)DoFirst:(UIButton *)sender;
 
 @end
