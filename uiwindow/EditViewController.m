@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,26 +24,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)logSomeThing:(UIButton *)sender {
+- (IBAction)logSomeThing:(id)sender {
     NSLog(@"editview----------------------%s","what");
 //    _logSomeThingBtn.backgroundColor = [UIColor redColor];
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"这是一个简单的警告框" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"提示"
+                          message:@"这是一个简单的警告框"
+                          delegate:self
+                          cancelButtonTitle:@"确定"
+                          otherButtonTitles: @"取",nil];
     [alert show];
 }
 
-- (IBAction)DeleteViewControl:(UIButton *)sender {
-//    finish this UIViewController
-    [self dismissViewControllerAnimated:YES completion:nil];
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"button index = %ld",(long)buttonIndex);
+    if (buttonIndex == 1) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"sheet button index = %ld",buttonIndex);
+}
+
+- (IBAction)DeleteViewControl:(id)sender {
+    UIActionSheet *actionsheet = [[UIActionSheet alloc]initWithTitle:nil
+                                                   delegate:self
+                                                   cancelButtonTitle:@"cancel"
+                                                   destructiveButtonTitle:@"destory"
+                                                   otherButtonTitles:@"facebook",@"sina", nil];
+    actionsheet.actionSheetStyle = UIActionSheetStyleAutomatic;
+    [actionsheet showInView:self.view];
+    
+    
 //    UIWebView *webview = [[UIWebView alloc]initWithFrame:CGRectMake(10, 10, 300, 300)];
 //    [self.view addSubview:webview];
 //    NSURL *url;

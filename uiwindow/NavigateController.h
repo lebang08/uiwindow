@@ -11,6 +11,8 @@
 @interface NavigateController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *HomeTitle;
 - (IBAction)Cancel:(id)sender;
-- (IBAction)Save:(UIBarButtonItem *)sender;
+- (IBAction)Save:(id)sender;
+- (IBAction)tool:(id)sender;
+- (IBAction)bar:(id)sender;
 
 @end

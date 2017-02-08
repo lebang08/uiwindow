@@ -35,11 +35,19 @@
 */
 
 - (IBAction)Cancel:(id)sender {
-    self.HomeTitle.text =@"Cancel";
+    self.HomeTitle.text = @"Cancel";
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)Save:(UIBarButtonItem *)sender {
     self.HomeTitle.text = @"Save";
+}
+
+- (IBAction)tool:(id)sender {
+    self.HomeTitle.text = @"tool";
+}
+
+- (IBAction)bar:(id)sender {
+    self.HomeTitle.text = @"bar";
 }
 @end

@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ButtonViewController : UIViewController
+@property (strong,nonatomic) NSTimer *myTimer;
 @property (weak, nonatomic) IBOutlet UIButton *MyFirstButton;
+@property (weak, nonatomic) IBOutlet UIProgressView *myProgress;
+
 - (IBAction)DoFirst:(UIButton *)sender;
 
 @end

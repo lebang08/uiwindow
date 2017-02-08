@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditViewController : UIViewController
+@interface EditViewController : UIViewController<UIAlertViewDelegate,UIActionSheetDelegate>
 - (IBAction)logSomeThing:(UIButton *)sender;
-- (IBAction)DeleteViewControl:(UIButton *)sender;
+- (IBAction)DeleteViewControl:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *logSomeThingBtn;
 
 @end
