@@ -40,7 +40,13 @@
 }
 
 - (IBAction)Save:(UIBarButtonItem *)sender {
-    self.HomeTitle.text = @"Save";
+    
+    NSData *theDate = self.myDatePicker.date;
+    NSLog(@"the date picked is:%@",[theDate description]);
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSLog(@"the date formate is: %@", [dateFormatter stringFromDate:theDate]);
+    self.HomeTitle.text = [dateFormatter stringFromDate:theDate];
 }
 
 - (IBAction)tool:(id)sender {

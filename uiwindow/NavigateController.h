@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NavigateController : UIViewController
+@property (weak, nonatomic) IBOutlet UIDatePicker *myDatePicker;
 @property (weak, nonatomic) IBOutlet UILabel *HomeTitle;
 - (IBAction)Cancel:(id)sender;
 - (IBAction)Save:(id)sender;
