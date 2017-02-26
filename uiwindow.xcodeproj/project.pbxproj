@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1829D8521E4CB4CE001CECE3 /* MyCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829D8511E4CB4CE001CECE3 /* MyCollectViewController.m */; };
-		1829D8551E4CB785001CECE3 /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829D8541E4CB785001CECE3 /* MyCollectionCell.m */; };
+		1829FEB01E62916E00FEABCD /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829FEAF1E62916E00FEABCD /* MyTableViewController.m */; };
 		18BA360F1E2F9D3200B4F171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA360E1E2F9D3200B4F171 /* main.m */; };
 		18BA36121E2F9D3200B4F171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36111E2F9D3200B4F171 /* AppDelegate.m */; };
 		18BA36151E2F9D3200B4F171 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36141E2F9D3200B4F171 /* ViewController.m */; };
 		18BA36181E2F9D3200B4F171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BA36161E2F9D3200B4F171 /* Main.storyboard */; };
 		18BA361A1E2F9D3200B4F171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BA36191E2F9D3200B4F171 /* Assets.xcassets */; };
-		18BA361D1E2F9D3200B4F171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BA361B1E2F9D3200B4F171 /* LaunchScreen.storyboard */; };
 		18BA36281E2F9D3200B4F171 /* uiwindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36271E2F9D3200B4F171 /* uiwindowTests.m */; };
 		18BA36331E2F9D3200B4F171 /* uiwindowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36321E2F9D3200B4F171 /* uiwindowUITests.m */; };
 		18D0D8431E47684400CF0052 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0D8421E47684400CF0052 /* ButtonViewController.m */; };
@@ -40,10 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1829D8501E4CB4CE001CECE3 /* MyCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectViewController.h; sourceTree = "<group>"; };
-		1829D8511E4CB4CE001CECE3 /* MyCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectViewController.m; sourceTree = "<group>"; };
-		1829D8531E4CB785001CECE3 /* MyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCell.h; sourceTree = "<group>"; };
-		1829D8541E4CB785001CECE3 /* MyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionCell.m; sourceTree = "<group>"; };
+		1829FEAE1E62916E00FEABCD /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTableViewController.h; path = ../MyTableViewController.h; sourceTree = "<group>"; };
+		1829FEAF1E62916E00FEABCD /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTableViewController.m; path = ../MyTableViewController.m; sourceTree = "<group>"; };
 		18BA360A1E2F9D3200B4F171 /* uiwindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uiwindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BA360E1E2F9D3200B4F171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18BA36101E2F9D3200B4F171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,7 +48,6 @@
 		18BA36141E2F9D3200B4F171 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18BA36171E2F9D3200B4F171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BA36191E2F9D3200B4F171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18BA361C1E2F9D3200B4F171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BA361E1E2F9D3200B4F171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BA36231E2F9D3200B4F171 /* uiwindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uiwindowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BA36271E2F9D3200B4F171 /* uiwindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uiwindowTests.m; sourceTree = "<group>"; };
@@ -126,11 +121,8 @@
 				18D0D8421E47684400CF0052 /* ButtonViewController.m */,
 				18D202C41E4A90330045C9FE /* NavigateController.h */,
 				18D202C51E4A90330045C9FE /* NavigateController.m */,
-				1829D8501E4CB4CE001CECE3 /* MyCollectViewController.h */,
-				1829D8511E4CB4CE001CECE3 /* MyCollectViewController.m */,
-				1829D8531E4CB785001CECE3 /* MyCollectionCell.h */,
-				1829D8541E4CB785001CECE3 /* MyCollectionCell.m */,
-				18BA361B1E2F9D3200B4F171 /* LaunchScreen.storyboard */,
+				1829FEAE1E62916E00FEABCD /* MyTableViewController.h */,
+				1829FEAF1E62916E00FEABCD /* MyTableViewController.m */,
 				18BA36161E2F9D3200B4F171 /* Main.storyboard */,
 				18BA36191E2F9D3200B4F171 /* Assets.xcassets */,
 				18BA361E1E2F9D3200B4F171 /* Info.plist */,
@@ -271,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BA361D1E2F9D3200B4F171 /* LaunchScreen.storyboard in Resources */,
 				18BA361A1E2F9D3200B4F171 /* Assets.xcassets in Resources */,
 				18BA36181E2F9D3200B4F171 /* Main.storyboard in Resources */,
 			);
@@ -299,13 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D202C61E4A90330045C9FE /* NavigateController.m in Sources */,
-				1829D8521E4CB4CE001CECE3 /* MyCollectViewController.m in Sources */,
 				18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */,
 				18BA36151E2F9D3200B4F171 /* ViewController.m in Sources */,
 				18BA36121E2F9D3200B4F171 /* AppDelegate.m in Sources */,
+				1829FEB01E62916E00FEABCD /* MyTableViewController.m in Sources */,
 				18D0D8431E47684400CF0052 /* ButtonViewController.m in Sources */,
 				18BA360F1E2F9D3200B4F171 /* main.m in Sources */,
-				1829D8551E4CB785001CECE3 /* MyCollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +337,6 @@
 				18BA36171E2F9D3200B4F171 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		18BA361B1E2F9D3200B4F171 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18BA361C1E2F9D3200B4F171 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
