@@ -17,6 +17,13 @@
 @synthesize slider;
 @synthesize stepper;
 
+
+- (IBAction)swipe:(UISwipeGestureRecognizer *)sender {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    EditViewController *edtViewControll = [mainStoryboard instantiateViewControllerWithIdentifier:@"myEditViewController"];
+    [self presentViewController: edtViewControll animated:YES completion:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

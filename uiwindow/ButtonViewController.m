@@ -19,6 +19,7 @@
 @implementation ButtonViewController
 @synthesize MySecondButton;
 
+#pragma mark
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -43,6 +44,7 @@
     [self.view addSubview:_myIndicate];
 }
 
+#pragma mark
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -73,6 +75,7 @@
     }
 }
 
+#pragma mark
 - (IBAction)DoSecond:(id)sender{
     MySecondButton.backgroundColor = [UIColor greenColor];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -80,7 +83,7 @@
     [self presentViewController:myNavigateController animated:NO completion:nil];
 }
 
-
+#pragma mark
 -(IBAction)DoThird:(id)sender{
     [self dismissViewControllerAnimated:NO completion:nil];
 }

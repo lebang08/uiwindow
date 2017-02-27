@@ -21,24 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5y5-9R-QsF">
-                                <rect key="frame" x="26" y="522" width="282" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="mysSider:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ho9-eB-koL"/>
-                                </connections>
-                            </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-sm-j9f">
-                                <rect key="frame" x="118" y="438" width="141" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-sm-j9f">
+                                <rect key="frame" x="117" y="423" width="141" height="30"/>
+                                <gestureRecognizers/>
                                 <state key="normal" title="Open VIewControl"/>
                                 <connections>
                                     <segue destination="55K-1b-8az" kind="modal" id="CCE-tH-Lqb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIU-4y-6vU">
-                                <rect key="frame" x="162" y="476" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIU-4y-6vU">
+                                <rect key="frame" x="148" y="476" width="78" height="27"/>
                                 <color key="backgroundColor" red="0.54468035609999998" green="0.82373948029999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Code Open"/>
@@ -46,7 +38,22 @@
                                     <action selector="CodeOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6a1-4R-6ej"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5y5-9R-QsF">
+                                <rect key="frame" x="46" y="566" width="282" height="31"/>
+                                <connections>
+                                    <action selector="mysSider:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ho9-eB-koL"/>
+                                </connections>
+                            </slider>
                         </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="SIU-4y-6vU" firstAttribute="height" secondItem="b5Y-sm-j9f" secondAttribute="height" id="Q2M-p5-Cpg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5y5-9R-QsF" secondAttribute="bottom" constant="115" id="gVz-0W-Ubs"/>
+                            <constraint firstItem="SIU-4y-6vU" firstAttribute="top" secondItem="b5Y-sm-j9f" secondAttribute="bottom" constant="23" id="x6x-jy-8bd"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8Dd-ou-AoV" appends="YES" id="93n-N5-Rr1"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="myIBslider" destination="5y5-9R-QsF" id="kkO-Cy-UJS"/>
@@ -54,6 +61,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="8Dd-ou-AoV">
+                    <connections>
+                        <action selector="swipe:" destination="BYZ-38-t0r" id="yHB-zs-ySh"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
@@ -269,7 +281,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fJs-1I-nWk" id="b99-nn-Ake">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -277,7 +289,7 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ITX-cf-LT9" id="rCF-Cy-ykv">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
