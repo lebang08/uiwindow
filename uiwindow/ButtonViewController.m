@@ -60,10 +60,10 @@
         
     }
     self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                               target:self
-                                             selector:@selector(download)
-                                             userInfo:nil
-                                              repeats:YES];
+                                                    target:self
+                                                  selector:@selector(download)
+                                                  userInfo:nil
+                                                   repeats:YES];
 }
 
 -(void)download{

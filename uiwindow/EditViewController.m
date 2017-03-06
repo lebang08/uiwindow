@@ -26,7 +26,7 @@
 
 - (IBAction)logSomeThing:(id)sender {
     NSLog(@"editview----------------------%s","what");
-//    _logSomeThingBtn.backgroundColor = [UIColor redColor];
+    //    _logSomeThingBtn.backgroundColor = [UIColor redColor];
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:@"提示"
                           message:@"这是一个简单的警告框"
@@ -49,19 +49,20 @@
 
 - (IBAction)DeleteViewControl:(id)sender {
     UIActionSheet *actionsheet = [[UIActionSheet alloc]initWithTitle:nil
-                                                   delegate:self
+                                                            delegate:self
                                                    cancelButtonTitle:@"cancel"
-                                                   destructiveButtonTitle:@"destory"
+                                              destructiveButtonTitle:@"destory"
                                                    otherButtonTitles:@"facebook",@"sina", nil];
     actionsheet.actionSheetStyle = UIActionSheetStyleAutomatic;
     [actionsheet showInView:self.view];
     
+    //Todo 配置网络权限
     
-//    UIWebView *webview = [[UIWebView alloc]initWithFrame:CGRectMake(10, 10, 300, 300)];
-//    [self.view addSubview:webview];
-//    NSURL *url;
-//    url = [[NSURL alloc]initWithString:@"http://www.baidu.com/"];
-//    [webview loadRequest:[NSURLRequest requestWithURL:url]];
+    //    UIWebView *webview = [[UIWebView alloc]initWithFrame:CGRectMake(10, 10, 300, 300)];
+    //    [self.view addSubview:webview];
+    //    NSURL *url;
+    //    url = [[NSURL alloc]initWithString:@"http://www.baidu.com/"];
+    //    [webview loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
 @end
