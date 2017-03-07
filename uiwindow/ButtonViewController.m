@@ -24,6 +24,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //获取到上一个界面通过segue传递来的参数
+    NSLog(@"hahahah----%@", self.data);
+    
     _MyFirstButton.backgroundColor = [UIColor greenColor];
     
     MySecondButton = [[UIButton alloc] initWithFrame:CGRectMake(80, 300, 100, 28)];

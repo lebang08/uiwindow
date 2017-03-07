@@ -10,6 +10,7 @@
 
 @interface ButtonViewController : UIViewController
 @property (strong,nonatomic) NSTimer *myTimer;
+@property (strong,nonatomic) NSString *data;
 @property (weak, nonatomic) IBOutlet UIButton *MyFirstButton;
 @property (weak, nonatomic) IBOutlet UIProgressView *myProgress;
 

@@ -10,4 +10,6 @@
 
 @interface MyTableViewController : UITableViewController
 
+@property (strong,nonatomic) NSMutableArray* mCountryList;
+
 @end

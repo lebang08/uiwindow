@@ -21,16 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-sm-j9f">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-sm-j9f">
                                 <rect key="frame" x="117" y="423" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <state key="normal" title="Open VIewControl"/>
                                 <connections>
-                                    <segue destination="55K-1b-8az" kind="modal" id="CCE-tH-Lqb"/>
+                                    <segue destination="55K-1b-8az" kind="modal" modalTransitionStyle="flipHorizontal" id="CCE-tH-Lqb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIU-4y-6vU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIU-4y-6vU">
                                 <rect key="frame" x="148" y="476" width="78" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.54468035609999998" green="0.82373948029999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Code Open"/>
@@ -38,19 +40,15 @@
                                     <action selector="CodeOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6a1-4R-6ej"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5y5-9R-QsF">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5y5-9R-QsF">
                                 <rect key="frame" x="46" y="566" width="282" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="mysSider:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ho9-eB-koL"/>
                                 </connections>
                             </slider>
                         </subviews>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="SIU-4y-6vU" firstAttribute="height" secondItem="b5Y-sm-j9f" secondAttribute="height" id="Q2M-p5-Cpg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5y5-9R-QsF" secondAttribute="bottom" constant="115" id="gVz-0W-Ubs"/>
-                            <constraint firstItem="SIU-4y-6vU" firstAttribute="top" secondItem="b5Y-sm-j9f" secondAttribute="bottom" constant="23" id="x6x-jy-8bd"/>
-                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="8Dd-ou-AoV" appends="YES" id="93n-N5-Rr1"/>
                         </connections>
@@ -104,7 +102,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="b1D-yG-edT" kind="modal" id="d4c-un-7AY"/>
+                                    <segue destination="b1D-yG-edT" kind="modal" identifier="edtsegue" id="d4c-un-7AY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -258,11 +256,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AQZ-lz-dk3" id="J7z-Pc-myk">
-                                    <rect key="frame" x="0.0" y="0.0" width="308" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wnF-WJ-eVA">
-                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="5" width="33" height="20"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -297,8 +295,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="MyTable" id="zED-c1-22Z">
-                        <barButtonItem key="rightBarButtonItem" title="Detial" id="zA8-0V-0po"/>
+                        <barButtonItem key="rightBarButtonItem" title="Detial" id="zA8-0V-0po">
+                            <connections>
+                                <action selector="toEditing:" destination="Fg6-gt-JSF" id="RNN-Ak-1M8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mytableview" destination="MiP-tC-zmY" id="0do-C6-Drd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGD-T8-Cu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

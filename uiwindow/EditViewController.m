@@ -7,6 +7,7 @@
 //
 
 #import "EditViewController.h"
+#import "ButtonViewController.h"
 
 @interface EditViewController ()
 
@@ -19,9 +20,12 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"edtsegue"]) {
+        ButtonViewController* btncontrol = segue.destinationViewController;
+        btncontrol.data = @"lalala";
+    }
 }
 
 - (IBAction)logSomeThing:(id)sender {

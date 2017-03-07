@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18191F3D1E6F01EC00421AD9 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 18191F3C1E6F01EC00421AD9 /* Country.m */; };
 		1829FEB01E62916E00FEABCD /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829FEAF1E62916E00FEABCD /* MyTableViewController.m */; };
 		18BA360F1E2F9D3200B4F171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA360E1E2F9D3200B4F171 /* main.m */; };
 		18BA36121E2F9D3200B4F171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36111E2F9D3200B4F171 /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18191F3B1E6F01EC00421AD9 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Country.h; path = ../../mytable/MyTable/MyTable/Country.h; sourceTree = "<group>"; };
+		18191F3C1E6F01EC00421AD9 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Country.m; path = ../../mytable/MyTable/MyTable/Country.m; sourceTree = "<group>"; };
 		1829FEAE1E62916E00FEABCD /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTableViewController.h; path = ../MyTableViewController.h; sourceTree = "<group>"; };
 		1829FEAF1E62916E00FEABCD /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTableViewController.m; path = ../MyTableViewController.m; sourceTree = "<group>"; tabWidth = 154; };
 		18BA360A1E2F9D3200B4F171 /* uiwindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uiwindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +126,8 @@
 				18D202C51E4A90330045C9FE /* NavigateController.m */,
 				1829FEAE1E62916E00FEABCD /* MyTableViewController.h */,
 				1829FEAF1E62916E00FEABCD /* MyTableViewController.m */,
+				18191F3B1E6F01EC00421AD9 /* Country.h */,
+				18191F3C1E6F01EC00421AD9 /* Country.m */,
 				18BA36161E2F9D3200B4F171 /* Main.storyboard */,
 				18BA36191E2F9D3200B4F171 /* Assets.xcassets */,
 				18BA361E1E2F9D3200B4F171 /* Info.plist */,
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18191F3D1E6F01EC00421AD9 /* Country.m in Sources */,
 				18D202C61E4A90330045C9FE /* NavigateController.m in Sources */,
 				18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */,
 				18BA36151E2F9D3200B4F171 /* ViewController.m in Sources */,
