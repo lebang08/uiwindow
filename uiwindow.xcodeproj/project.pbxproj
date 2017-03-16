@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		18191F3D1E6F01EC00421AD9 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 18191F3C1E6F01EC00421AD9 /* Country.m */; };
 		1829FEB01E62916E00FEABCD /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829FEAF1E62916E00FEABCD /* MyTableViewController.m */; };
+		1833981A1E7AE24B00CCB7A0 /* EmaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183398191E7AE24B00CCB7A0 /* EmaiViewController.m */; };
+		1833981D1E7AE42F00CCB7A0 /* EmailEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833981C1E7AE42E00CCB7A0 /* EmailEditViewController.m */; };
 		18BA360F1E2F9D3200B4F171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA360E1E2F9D3200B4F171 /* main.m */; };
 		18BA36121E2F9D3200B4F171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36111E2F9D3200B4F171 /* AppDelegate.m */; };
 		18BA36151E2F9D3200B4F171 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36141E2F9D3200B4F171 /* ViewController.m */; };
@@ -18,6 +20,8 @@
 		18BA36331E2F9D3200B4F171 /* uiwindowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA36321E2F9D3200B4F171 /* uiwindowUITests.m */; };
 		18D0D8431E47684400CF0052 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0D8421E47684400CF0052 /* ButtonViewController.m */; };
 		18D202C61E4A90330045C9FE /* NavigateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D202C51E4A90330045C9FE /* NavigateController.m */; };
+		18DBB1061E79A3F900A2472B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DBB1051E79A3F900A2472B /* LaunchScreen.storyboard */; };
+		18DBB10B1E79B01200A2472B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DBB10A1E79B01200A2472B /* libsqlite3.tbd */; };
 		18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E9C61E4037F300CE1503 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,10 @@
 		18191F3C1E6F01EC00421AD9 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Country.m; path = ../../mytable/MyTable/MyTable/Country.m; sourceTree = "<group>"; };
 		1829FEAE1E62916E00FEABCD /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTableViewController.h; path = ../MyTableViewController.h; sourceTree = "<group>"; };
 		1829FEAF1E62916E00FEABCD /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTableViewController.m; path = ../MyTableViewController.m; sourceTree = "<group>"; tabWidth = 154; };
+		183398181E7AE24B00CCB7A0 /* EmaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmaiViewController.h; sourceTree = "<group>"; };
+		183398191E7AE24B00CCB7A0 /* EmaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmaiViewController.m; sourceTree = "<group>"; };
+		1833981B1E7AE42E00CCB7A0 /* EmailEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailEditViewController.h; sourceTree = "<group>"; };
+		1833981C1E7AE42E00CCB7A0 /* EmailEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailEditViewController.m; sourceTree = "<group>"; };
 		18BA360A1E2F9D3200B4F171 /* uiwindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uiwindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BA360E1E2F9D3200B4F171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18BA36101E2F9D3200B4F171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 		18D0D8421E47684400CF0052 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		18D202C41E4A90330045C9FE /* NavigateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateController.h; sourceTree = "<group>"; };
 		18D202C51E4A90330045C9FE /* NavigateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateController.m; sourceTree = "<group>"; };
+		18DBB1051E79A3F900A2472B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18DBB10A1E79B01200A2472B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		18E6E9C51E4037F300CE1503 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		18E6E9C61E4037F300CE1503 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DBB10B1E79B01200A2472B /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +109,7 @@
 				18BA36261E2F9D3200B4F171 /* uiwindowTests */,
 				18BA36311E2F9D3200B4F171 /* uiwindowUITests */,
 				18BA360B1E2F9D3200B4F171 /* Products */,
+				18DBB1091E79B01100A2472B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,8 +140,13 @@
 				1829FEAF1E62916E00FEABCD /* MyTableViewController.m */,
 				18191F3B1E6F01EC00421AD9 /* Country.h */,
 				18191F3C1E6F01EC00421AD9 /* Country.m */,
+				183398181E7AE24B00CCB7A0 /* EmaiViewController.h */,
+				183398191E7AE24B00CCB7A0 /* EmaiViewController.m */,
+				1833981B1E7AE42E00CCB7A0 /* EmailEditViewController.h */,
+				1833981C1E7AE42E00CCB7A0 /* EmailEditViewController.m */,
 				18BA36161E2F9D3200B4F171 /* Main.storyboard */,
 				18BA36191E2F9D3200B4F171 /* Assets.xcassets */,
+				18DBB1051E79A3F900A2472B /* LaunchScreen.storyboard */,
 				18BA361E1E2F9D3200B4F171 /* Info.plist */,
 				18BA360D1E2F9D3200B4F171 /* Supporting Files */,
 			);
@@ -160,6 +177,14 @@
 				18BA36341E2F9D3200B4F171 /* Info.plist */,
 			);
 			path = uiwindowUITests;
+			sourceTree = "<group>";
+		};
+		18DBB1091E79B01100A2472B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18DBB10A1E79B01200A2472B /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DBB1061E79A3F900A2472B /* LaunchScreen.storyboard in Resources */,
 				18BA361A1E2F9D3200B4F171 /* Assets.xcassets in Resources */,
 				18BA36181E2F9D3200B4F171 /* Main.storyboard in Resources */,
 			);
@@ -295,11 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18191F3D1E6F01EC00421AD9 /* Country.m in Sources */,
+				1833981A1E7AE24B00CCB7A0 /* EmaiViewController.m in Sources */,
 				18D202C61E4A90330045C9FE /* NavigateController.m in Sources */,
 				18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */,
 				18BA36151E2F9D3200B4F171 /* ViewController.m in Sources */,
 				18BA36121E2F9D3200B4F171 /* AppDelegate.m in Sources */,
 				1829FEB01E62916E00FEABCD /* MyTableViewController.m in Sources */,
+				1833981D1E7AE42F00CCB7A0 /* EmailEditViewController.m in Sources */,
 				18D0D8431E47684400CF0052 /* ButtonViewController.m in Sources */,
 				18BA360F1E2F9D3200B4F171 /* main.m in Sources */,
 			);
@@ -439,7 +467,6 @@
 		18BA36381E2F9D3200B4F171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = uiwindow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lebang.uiwindow;
@@ -450,7 +477,6 @@
 		18BA36391E2F9D3200B4F171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = uiwindow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lebang.uiwindow;

@@ -29,14 +29,14 @@
     
     _MyFirstButton.backgroundColor = [UIColor greenColor];
     
-    MySecondButton = [[UIButton alloc] initWithFrame:CGRectMake(80, 300, 100, 28)];
+    MySecondButton = [[UIButton alloc] initWithFrame:CGRectMake(110, 300, 100, 28)];
     MySecondButton.backgroundColor = [UIColor redColor];
-    [MySecondButton setTitle:@"Second" forState:UIControlStateNormal];
+    [MySecondButton setTitle:@"SecondOpen" forState:UIControlStateNormal];
     [MySecondButton addTarget:self action:@selector(DoSecond:) forControlEvents:UIControlEventTouchUpInside];
     
-    _MyThirdButton  = [[UIButton alloc]initWithFrame:CGRectMake(80, 400, 100, 20)];
+    _MyThirdButton  = [[UIButton alloc]initWithFrame:CGRectMake(110, 400, 100, 20)];
     _MyThirdButton.backgroundColor = [UIColor purpleColor];
-    [_MyThirdButton setTitle:@"Third" forState:UIControlStateNormal];
+    [_MyThirdButton setTitle:@"ThirdClose" forState:UIControlStateNormal];
     [_MyThirdButton addTarget:self action:@selector(DoThird:) forControlEvents:UIControlEventTouchUpInside];
     
     self.myIndicate = [[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(100, 10, 40, 40)];

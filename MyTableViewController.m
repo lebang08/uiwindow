@@ -12,10 +12,12 @@
 @interface MyTableViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *mytableview;
+- (IBAction)close:(id)sender;
 @end
 
 @implementation MyTableViewController
 - (IBAction)toEditing:(id)sender {
+//     self.navigationController.navigationBarHidden =YES;
     if (self.mytableview.editing == true) {
         self.mytableview.editing = false;
     }else{
@@ -125,15 +127,7 @@
     return YES;
 }
 
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
+- (IBAction)close:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
