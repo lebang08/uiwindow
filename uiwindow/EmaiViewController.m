@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"color is %i",0xffeedd);
+    self.txtEmail.textColor = [UIColor yellowColor];
 }
 
 
