@@ -119,6 +119,36 @@
 			name = TOEFL;
 			sourceTree = "<group>";
 		};
+		18A777C31E801A030083D379 /* TabFirst */ = {
+			isa = PBXGroup;
+			children = (
+				18BA36131E2F9D3200B4F171 /* ViewController.h */,
+				18BA36141E2F9D3200B4F171 /* ViewController.m */,
+				18E6E9C51E4037F300CE1503 /* EditViewController.h */,
+				18E6E9C61E4037F300CE1503 /* EditViewController.m */,
+				18D0D8411E47684400CF0052 /* ButtonViewController.h */,
+				18D0D8421E47684400CF0052 /* ButtonViewController.m */,
+				18D202C41E4A90330045C9FE /* NavigateController.h */,
+				18D202C51E4A90330045C9FE /* NavigateController.m */,
+				1829FEAE1E62916E00FEABCD /* MyTableViewController.h */,
+				1829FEAF1E62916E00FEABCD /* MyTableViewController.m */,
+				18191F3B1E6F01EC00421AD9 /* Country.h */,
+				18191F3C1E6F01EC00421AD9 /* Country.m */,
+			);
+			name = TabFirst;
+			sourceTree = "<group>";
+		};
+		18A777C41E801A1E0083D379 /* TabSecond */ = {
+			isa = PBXGroup;
+			children = (
+				183398181E7AE24B00CCB7A0 /* EmaiViewController.h */,
+				183398191E7AE24B00CCB7A0 /* EmaiViewController.m */,
+				1833981B1E7AE42E00CCB7A0 /* EmailEditViewController.h */,
+				1833981C1E7AE42E00CCB7A0 /* EmailEditViewController.m */,
+			);
+			name = TabSecond;
+			sourceTree = "<group>";
+		};
 		18BA36011E2F9D3100B4F171 = {
 			isa = PBXGroup;
 			children = (
@@ -143,25 +173,11 @@
 		18BA360C1E2F9D3200B4F171 /* uiwindow */ = {
 			isa = PBXGroup;
 			children = (
+				18A777C41E801A1E0083D379 /* TabSecond */,
+				18A777C31E801A030083D379 /* TabFirst */,
 				184933E81E7EA5A0002E7AAB /* TOEFL */,
 				18BA36101E2F9D3200B4F171 /* AppDelegate.h */,
 				18BA36111E2F9D3200B4F171 /* AppDelegate.m */,
-				18BA36131E2F9D3200B4F171 /* ViewController.h */,
-				18BA36141E2F9D3200B4F171 /* ViewController.m */,
-				18E6E9C51E4037F300CE1503 /* EditViewController.h */,
-				18E6E9C61E4037F300CE1503 /* EditViewController.m */,
-				18D0D8411E47684400CF0052 /* ButtonViewController.h */,
-				18D0D8421E47684400CF0052 /* ButtonViewController.m */,
-				18D202C41E4A90330045C9FE /* NavigateController.h */,
-				18D202C51E4A90330045C9FE /* NavigateController.m */,
-				1829FEAE1E62916E00FEABCD /* MyTableViewController.h */,
-				1829FEAF1E62916E00FEABCD /* MyTableViewController.m */,
-				18191F3B1E6F01EC00421AD9 /* Country.h */,
-				18191F3C1E6F01EC00421AD9 /* Country.m */,
-				183398181E7AE24B00CCB7A0 /* EmaiViewController.h */,
-				183398191E7AE24B00CCB7A0 /* EmaiViewController.m */,
-				1833981B1E7AE42E00CCB7A0 /* EmailEditViewController.h */,
-				1833981C1E7AE42E00CCB7A0 /* EmailEditViewController.m */,
 				18BA36161E2F9D3200B4F171 /* Main.storyboard */,
 				18BA36191E2F9D3200B4F171 /* Assets.xcassets */,
 				18DBB1051E79A3F900A2472B /* LaunchScreen.storyboard */,
