@@ -130,6 +130,18 @@
 }
 
 - (IBAction)update:(id)sender {
+    NSString *replace = [self.edtPracticed.text stringByReplacingOccurrencesOfString:@"a" withString:@"not a"];
+    NSLog(@"replace = %@",replace);
+    
+    NSString *append = [replace stringByAppendingString:@" so I have a dream"];
+    NSLog(@"append = %@",append);
+    
+    NSString *subString = [append substringToIndex:5];
+    NSLog(@" sub string = %@",subString);
+    
+    NSArray *array = [append componentsSeparatedByString:@"a"];
+    NSLog(@" array = %@",array);
+    
     sqlite3 *database;
     if(sqlite3_open([self.databaseFilePath UTF8String], &database) != SQLITE_OK){
         NSLog(@"open fail in update method");
@@ -142,17 +154,17 @@
     if(sqlite3_exec(database, [sql_update UTF8String], NULL, NULL, NULL) !=SQLITE_OK){
         NSLog(@"数据库准备更新失败");
     };
-    //    if (sqlite3_prepare_v2(database, sql_update, -1, &stmt, nil) == SQLITE_OK) {
-    //        sqlite3_bind_text(stmt, 1, [self.edtPracticed.text UTF8String], -1, NULL);
-    //    }else{
-    //        sqlite3_close(database);
-    //        NSLog(@"数据库准备更新失败");
-    //        return;
-    //    }
-    //    if (sqlite3_step(stmt) != SQLITE_DONE) {
-    //        sqlite3_finalize(stmt);
-    //        NSLog(@"数据库更新失败");
-    //    }
+    if (sqlite3_prepare_v2(database, [sql_update UTF8String], -1, &stmt, nil) == SQLITE_OK) {
+        sqlite3_bind_text(stmt, 1, [self.edtPracticed.text UTF8String], -1, NULL);
+    }else{
+        sqlite3_close(database);
+        NSLog(@"数据库准备更新失败");
+        return;
+    }
+    if (sqlite3_step(stmt) != SQLITE_DONE) {
+        sqlite3_finalize(stmt);
+        NSLog(@"数据库更新失败");
+    }
     sqlite3_close(database);
 }
 

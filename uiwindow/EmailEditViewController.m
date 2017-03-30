@@ -10,9 +10,8 @@
 #import "EmaiViewController.h"
 
 @interface EmailEditViewController ()
-
 - (IBAction)commit:(id)sender;
-
+- (IBAction)setDataDefault:(id)sender;
 @end
 
 @implementation EmailEditViewController
@@ -34,5 +33,9 @@
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)setDataDefault:(id)sender {
+    
 }
 @end

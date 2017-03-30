@@ -8,6 +8,7 @@
 
 #import "EditViewController.h"
 #import "ButtonViewController.h"
+#import "Header.h"
 
 @interface EditViewController ()
 
@@ -35,8 +36,8 @@
                           initWithTitle:@"提示"
                           message:@"这是一个简单的警告框"
                           delegate:self
-                          cancelButtonTitle:@"确定"
-                          otherButtonTitles: @"取",nil];
+                          cancelButtonTitle:@"sure"
+                          otherButtonTitles: @"cancel",nil];
     [alert show];
 }
 
@@ -52,21 +53,20 @@
 }
 
 - (IBAction)DeleteViewControl:(id)sender {
-    UIActionSheet *actionsheet = [[UIActionSheet alloc]initWithTitle:nil
-                                                            delegate:self
-                                                   cancelButtonTitle:@"cancel"
-                                              destructiveButtonTitle:@"destory"
-                                                   otherButtonTitles:@"facebook",@"sina", nil];
-    actionsheet.actionSheetStyle = UIActionSheetStyleAutomatic;
-    [actionsheet showInView:self.view];
+//    UIActionSheet *actionsheet = [[UIActionSheet alloc]initWithTitle:nil
+//                                                            delegate:self
+//                                                   cancelButtonTitle:@"cancel"
+//                                              destructiveButtonTitle:@"destory"
+//                                                   otherButtonTitles:@"facebook",@"sina", nil];
+//    actionsheet.actionSheetStyle = UIActionSheetStyleAutomatic;
+//    [actionsheet showInView:self.view];
     
     //Todo 配置网络权限
-    
-    //    UIWebView *webview = [[UIWebView alloc]initWithFrame:CGRectMake(10, 10, 300, 300)];
-    //    [self.view addSubview:webview];
-    //    NSURL *url;
-    //    url = [[NSURL alloc]initWithString:@"http://www.baidu.com/"];
-    //    [webview loadRequest:[NSURLRequest requestWithURL:url]];
+        UIWebView *webview = [[UIWebView alloc]initWithFrame:CGRectMake(10, 300, KWidth, 300)];
+        [self.view addSubview:webview];
+        NSURL *url;
+        url = [[NSURL alloc]initWithString:@"http://www.baidu.com/"];
+        [webview loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
 @end

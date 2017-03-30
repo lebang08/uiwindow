@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "EditViewController.h"
-
+#import "Header.h"
 @interface ViewController ()
 
 @end
@@ -29,7 +29,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     UIImage *img = [UIImage imageNamed:@"logo"];
     UIImageView *imgview = [[UIImageView alloc] initWithImage:img];
-    imgview.frame = CGRectMake(10, 30, 300,180);
+    imgview.frame = CGRectMake(10, 30,KWidth,180);
     imgview.backgroundColor = [UIColor yellowColor];
     imgview.userInteractionEnabled = YES;
     
@@ -37,7 +37,7 @@
     [imgview addGestureRecognizer:singletap];
     [self.view addSubview:imgview];
     
-    slider = [[UISlider alloc]initWithFrame:CGRectMake(10, 240, 300, 0)];
+    slider = [[UISlider alloc]initWithFrame:CGRectMake(10, 240,KWidth, 0)];
     slider.minimumValue = 0.0;
     slider.maximumValue =300.0;
     slider.value = 128;

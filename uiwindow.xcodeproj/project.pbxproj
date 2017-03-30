@@ -25,6 +25,8 @@
 		18DBB1061E79A3F900A2472B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DBB1051E79A3F900A2472B /* LaunchScreen.storyboard */; };
 		18DBB10B1E79B01200A2472B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DBB10A1E79B01200A2472B /* libsqlite3.tbd */; };
 		18E6E9C71E4037F300CE1503 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6E9C61E4037F300CE1503 /* EditViewController.m */; };
+		18EE8C971E8D67350048A410 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE8C961E8D67350048A410 /* PDFViewController.m */; };
+		18EE8C9A1E8D69750048A410 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18EE8C991E8D69750048A410 /* sample.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,7 @@
 		184933EA1E7EA5F4002E7AAB /* ToeflViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToeflViewController.m; sourceTree = "<group>"; };
 		184933EC1E7ECAB3002E7AAB /* ModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleViewController.h; sourceTree = "<group>"; };
 		184933ED1E7ECAB3002E7AAB /* ModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleViewController.m; sourceTree = "<group>"; };
+		18B3FBEC1E87F79700AFA740 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		18BA360A1E2F9D3200B4F171 /* uiwindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uiwindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BA360E1E2F9D3200B4F171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18BA36101E2F9D3200B4F171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,9 @@
 		18DBB10A1E79B01200A2472B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		18E6E9C51E4037F300CE1503 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		18E6E9C61E4037F300CE1503 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		18EE8C951E8D67350048A410 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		18EE8C961E8D67350048A410 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		18EE8C991E8D69750048A410 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = sample.pdf; path = ../sample.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,16 +179,18 @@
 		18BA360C1E2F9D3200B4F171 /* uiwindow */ = {
 			isa = PBXGroup;
 			children = (
+				18EE8C981E8D67400048A410 /* PDF */,
 				18A777C41E801A1E0083D379 /* TabSecond */,
 				18A777C31E801A030083D379 /* TabFirst */,
 				184933E81E7EA5A0002E7AAB /* TOEFL */,
+				18B3FBEC1E87F79700AFA740 /* Header.h */,
 				18BA36101E2F9D3200B4F171 /* AppDelegate.h */,
 				18BA36111E2F9D3200B4F171 /* AppDelegate.m */,
 				18BA36161E2F9D3200B4F171 /* Main.storyboard */,
 				18BA36191E2F9D3200B4F171 /* Assets.xcassets */,
 				18DBB1051E79A3F900A2472B /* LaunchScreen.storyboard */,
-				18BA361E1E2F9D3200B4F171 /* Info.plist */,
 				18BA360D1E2F9D3200B4F171 /* Supporting Files */,
+				18EE8C991E8D69750048A410 /* sample.pdf */,
 			);
 			path = uiwindow;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 		18BA360D1E2F9D3200B4F171 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18BA361E1E2F9D3200B4F171 /* Info.plist */,
 				18BA360E1E2F9D3200B4F171 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -219,6 +228,15 @@
 				18DBB10A1E79B01200A2472B /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18EE8C981E8D67400048A410 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				18EE8C951E8D67350048A410 /* PDFViewController.h */,
+				18EE8C961E8D67350048A410 /* PDFViewController.m */,
+			);
+			name = PDF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE8C9A1E8D69750048A410 /* sample.pdf in Resources */,
 				18DBB1061E79A3F900A2472B /* LaunchScreen.storyboard in Resources */,
 				18BA361A1E2F9D3200B4F171 /* Assets.xcassets in Resources */,
 				18BA36181E2F9D3200B4F171 /* Main.storyboard in Resources */,
@@ -354,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE8C971E8D67350048A410 /* PDFViewController.m in Sources */,
 				18191F3D1E6F01EC00421AD9 /* Country.m in Sources */,
 				1833981A1E7AE24B00CCB7A0 /* EmaiViewController.m in Sources */,
 				184933EE1E7ECAB3002E7AAB /* ModuleViewController.m in Sources */,
